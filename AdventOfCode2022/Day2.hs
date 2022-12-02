@@ -26,7 +26,7 @@ transform c
    | elem c "BY" = Paper
    | otherwise   = Scissors
 
--- me cpu
+
 getOutcome :: Element -> Element -> Outcome
 getOutcome cpu me = if cpu == me then Draw else case (cpu, me) of
    (Rock, Scissors) -> Lose
